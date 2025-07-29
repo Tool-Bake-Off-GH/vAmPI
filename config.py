@@ -23,5 +23,5 @@ def custom_problem_handler(error):
     response.status_code = error.status
     return response
 vuln_app.add_error_handler(ProblemException, custom_problem_handler)
-#password = "admin123"
+password = "admin123"
 vuln_app.add_api('openapi3.yml')
